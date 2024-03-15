@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script defer src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <title>navBar</title>
 </head>
 <body>
@@ -15,20 +16,21 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="register.php">S'inscrire</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Pricing</a>
+          <a class="nav-link" href="login.php">Connexion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="profil.php">Profil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="logout.php">Déconnexion</a>
         </li>
+        
       </ul>
     </div>
   </div>

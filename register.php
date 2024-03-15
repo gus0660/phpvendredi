@@ -1,7 +1,6 @@
 <?php
-include("./common/header.php");
-include("./common/menu.php");
-include("./common/footer.php");
+include("common/header.php");
+include("common/menu.php");
 ?>
 
 <div class="container-fluid">
@@ -15,7 +14,7 @@ include("./common/footer.php");
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">EEmail address</label>
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
@@ -28,3 +27,14 @@ include("./common/footer.php");
         </div>
     </div>
 </div>
+<?php
+if(isset($_POST['submit'])){
+    if(!empty($_POST['username']) &&!empty($_POST['email']) &&!empty($_POST['password'])){
+        $username = $_POST['username'];
+        if(preg_match('/^[a-zA-Z0-9_]{4,16}$/', $username)){
+    echo "Mon nom : $username";
+}else{
+    echo "Le nom doit contenir des chiffres, des caractères (de 4 à 16) majuscule et minuscule";
+}
+include("common/footer.php");
+?>
