@@ -18,7 +18,13 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="register.php">S'inscrire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
